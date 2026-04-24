@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>詠唱AI</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Microsoft JhengHei", Arial, sans-serif;
+      background: #f5f7fb;
+      color: #333;
+      line-height: 1.8;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 50px auto;
+      padding: 0 20px 40px;
+    }
+
+    .header {
+      background: linear-gradient(135deg, #5b7cff, #7f9cff);
+      color: #fff;
+      text-align: center;
+      padding: 50px 30px;
+      border-radius: 24px;
+      box-shadow: 0 10px 30px rgba(91, 124, 255, 0.25);
+      margin-bottom: 30px;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 42px;
+      letter-spacing: 2px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 30px;
+      margin-bottom: 24px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    }
+
+    .card h2 {
+      margin-top: 0;
+      margin-bottom: 16px;
+      font-size: 28px;
+      color: #2f4fb3;
+      border-left: 6px solid #5b7cff;
+      padding-left: 14px;
+    }
+
+    .label {
+      font-weight: bold;
+      color: #444;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    p {
+      margin: 0;
+      font-size: 17px;
+    }
+
+    @media (max-width: 768px) {
+      .header h1 {
+        font-size: 32px;
+      }
+
+      .card h2 {
+        font-size: 24px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>詠唱AI</h1>
+    </div>
+
+    <div class="card">
+      <h2>作業一：API 資料整理與格式化</h2>
+      <span class="label">內容：</span>
+      <p>
+        透過 AI 從指定 API 抓取資料，將原本較難閱讀的 API 回傳內容整理成清楚、易讀的資料格式，並輸出成 Excel。
+        同時將原始英文欄位名稱翻譯為繁體中文，例如將 account 顯示為會員帳號。
+        另外，依照測試規則計算各遊戲在追殺局中玩家贏錢的比例，若比例超過 5%，則於 log 中特別標示警示訊息。
+        最後再將整理完成的結果自動上傳至 Google Sheet，方便後續查看與共享。
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>作業二：依據作業一產出 Allure 報表</h2>
+      <span class="label">內容：</span>
+      <p>
+        根據作業一的資料整理流程建立測試驗證，確認 API 抓取、資料格式化、欄位翻譯、異常判斷與結果輸出皆可正確執行。
+        並將測試執行結果透過 Allure 產出報表，讓整體測試結果能夠更清楚地展示與檢視。
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>作業三：使用 VSCode 部署到 GitHub</h2>
+      <span class="label">內容：</span>
+      <p>
+        使用 VSCode 建立並整理一頁式作業頁面，將作業一與作業二的內容整合成可閱讀的 HTML 頁面。
+        完成頁面後，透過 Git 與 GitHub 進行版本控管與上傳，將專案部署到 GitHub，方便保存、展示與分享。
+      </p>
+    </div>
+  </div>
+</body>
+</html>
